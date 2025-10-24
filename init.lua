@@ -8,6 +8,7 @@ g = vim.g
 o.number = true
 o.tabstop = 4
 o.shiftwidth = 0
+o.preserveindent = true
 
 o.background = 'dark'
 c.colorscheme 'carbonfox'
