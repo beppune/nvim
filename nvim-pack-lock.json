@@ -8,6 +8,10 @@
       "rev": "a905eeebc4e63fdc48b5135d3bf8aea5618fb21c",
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
+    "luapad": {
+      "rev": "918c60ae919d96df1dc201cbf69eb09090148cdd",
+      "src": "https://github.com/rafcamlet/nvim-luapad.git"
+    },
     "luasnip": {
       "rev": "a62e1083a3cfe8b6b206e7d3d33a51091df25357",
       "src": "https://github.com/L3MON4D3/LuaSnip.git"

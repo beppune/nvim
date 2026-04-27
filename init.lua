@@ -59,7 +59,7 @@ vim.keymap.set( 'n', '<Leader>t', ':tabnew<CR>', { silent = true })
 vim.keymap.set( 'n', '<Leader>n', ':tabnext<CR>', { silent = true })
 
 -- Command line
-vim.keymap.set( 'n', '<Leader>g', ':', { silent = true })
+vim.keymap.set( 'n', '<Leader>g', ':', { silent = false })
 vim.keymap.set( 'n', '<Leader>s', '/', { silent = true })
 vim.keymap.set( 'c', 'jj', '<Esc>', { silent = true })
 -- }}}
@@ -71,7 +71,8 @@ vim.pack.add({
     { src = "https://github.com/nvim-telescope/telescope.nvim.git", name = "telescope", load = true },
     { src = "https://github.com/nvim-lualine/lualine.nvim", name = "lualine", load = true },
     { src = "https://github.com/saghen/blink.cmp.git", name = "blink.cmp" },
-    { src = "https://github.com/NeogitOrg/neogit.git", name = "neogit" }
+    { src = "https://github.com/NeogitOrg/neogit.git", name = "neogit" },
+    { src = "https://github.com/rafcamlet/nvim-luapad.git", name ="luapad" },
 })
 
 require 'lualine'.setup({options={theme='dracula'}})
