@@ -18,7 +18,7 @@ local colors = function (opts)
 	    entry_maker = function (e)
 	    	return {
 		    value = e,
-		    display = e[1],
+		    display = e[2] .. "\t\t" .. e[3],
 		    ordinal = e[1],
 		}
 	    end
@@ -29,7 +29,7 @@ local colors = function (opts)
 	    	actions.close(prompt_bufnr)
 		local selection = actions_state.get_selected_entry()
 		-- vim.api.nvim_put({selection[1]}, "", false, true)
-		print(vim.inspect(selection))
+		print(selection)
 	    end)
 	    return true
 	end
