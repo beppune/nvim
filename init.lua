@@ -30,6 +30,8 @@ end
 vim.keymap.set( 'i', 'jj', '<Esc>', { silent = true } )
 vim.keymap.set( 'i', 'JJ', '<Esc>:', { silent = true } )
 vim.keymap.set( 't', '<Esc>', '<C-\\><C-N>' , { silent = true })
+vim.keymap.set( 'i', '<C-l>', '<Right>' , { silent = true })
+vim.keymap.set( 'i', '<C-h>', '<Left>' , { silent = true })
 
 -- Brackets
 vim.keymap.set('n', 'ç', '%')
@@ -87,6 +89,7 @@ vim.keymap.set('n', '<leader>fh', ts.help_tags, { desc = 'Telescope help tags' }
 vim.keymap.set('n', '<leader>fc', ts.commands, { desc = 'Telescope help tags' })
 -- }}}
 
+-- [[
 -- #LSP {{{
 vim.diagnostic.config({
     virtual_text = true,
@@ -137,7 +140,7 @@ vim.lsp.config('*', {
 	})
     end
 })
-
+--]]
 -- }}}
 
 -- #MODULES {{{
