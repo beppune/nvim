@@ -146,7 +146,6 @@ vim.lsp.config('*', {
 
 	-- Outline
 	require("outline").setup({})
-	require("outline").open()
 
     end
 })
