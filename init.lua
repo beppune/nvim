@@ -75,6 +75,7 @@ vim.pack.add({
     { src = "https://github.com/saghen/blink.cmp.git", name = "blink.cmp" },
     { src = "https://github.com/NeogitOrg/neogit.git", name = "neogit" },
     { src = "https://github.com/rafcamlet/nvim-luapad.git", name ="luapad" },
+    { src = "https://github.com/hedyhli/outline.nvim.git", name = 'outline' },
 })
 
 require 'lualine'.setup({options={theme='dracula'}})
@@ -121,6 +122,10 @@ vim.lsp.config('*', {
 	    vim.lsp.buf.hover()
 	end, { buffer = bufnr })
 
+	vim.keymap.set( 'n', 'grd', function()
+	    vim.lsp.buf.definition()
+	end, { buffer = bufnr })
+
 	-- Options {{
 	vim.o.relativenumber = true
 	vim.o.fileformat='unix'
@@ -138,6 +143,11 @@ vim.lsp.config('*', {
 		implementation = 'lua'
 	    },
 	})
+
+	-- Outline
+	require("outline").setup({})
+	require("outline").open()
+
     end
 })
 --]]

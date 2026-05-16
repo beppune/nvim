@@ -11,6 +11,12 @@ local rust_analyzer_config = {
 		    enable = true
 		},
 	    },
+	    cargo = {
+		allfeatures = true,
+	    },
+	    check = {
+		command = "clippy"
+	    }
 	},
     },
 }
