@@ -75,7 +75,6 @@ vim.pack.add({
     { src = "https://github.com/saghen/blink.cmp.git", name = "blink.cmp" },
     { src = "https://github.com/NeogitOrg/neogit.git", name = "neogit" },
     { src = "https://github.com/rafcamlet/nvim-luapad.git", name ="luapad" },
-    { src = "https://github.com/hedyhli/outline.nvim.git", name = 'outline' },
 })
 
 require 'lualine'.setup({options={theme='dracula'}})
@@ -143,9 +142,6 @@ vim.lsp.config('*', {
 		implementation = 'lua'
 	    },
 	})
-
-	-- Outline
-	require("outline").setup({})
 
     end
 })
