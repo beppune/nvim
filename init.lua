@@ -131,7 +131,7 @@ vim.lsp.config('*', {
 	    vim.lsp.buf.hover()
 	end, { buffer = bufnr })
 
-	vim.keymap.set( 'n', 'grd', function()
+	vim.keymap.set( 'n', 'grf', function()
 	    vim.lsp.buf.definition()
 	end, { buffer = bufnr })
 
