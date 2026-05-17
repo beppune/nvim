@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "aerial": {
+      "rev": "43dd88ad4024b1945906887521057c73d3b0d84e",
+      "src": "https://github.com/stevearc/aerial.nvim.git"
+    },
     "blink.cmp": {
       "rev": "456d38d1cd3743926f329204c2340f3e7840aad6",
       "src": "https://github.com/saghen/blink.cmp.git"
@@ -20,6 +24,10 @@
       "rev": "e06745228600a585b88726fc9fba44a373c15a47",
       "src": "https://github.com/NeogitOrg/neogit.git"
     },
+    "nvim-treesitter": {
+      "rev": "4916d6592ede8c07973490d9322f187e07dfefac",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter.git"
+    },
     "outline": {
       "rev": "c293eb56db880a0539bf9d85b4a27816960b863e",
       "src": "https://github.com/hedyhli/outline.nvim.git"
@@ -31,6 +39,18 @@
     "telescope": {
       "rev": "028d9a0695a0cc4cfa893889f8c408ed7ccc8adc",
       "src": "https://github.com/nvim-telescope/telescope.nvim.git"
+    },
+    "treesitter": {
+      "rev": "4916d6592ede8c07973490d9322f187e07dfefac",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter.git"
+    },
+    "tsobjects": {
+      "rev": "851e865342e5a4cb1ae23d31caf6e991e1c99f1e",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter-textobjects.git"
+    },
+    "tstextobjects": {
+      "rev": "851e865342e5a4cb1ae23d31caf6e991e1c99f1e",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
     }
   }
 }

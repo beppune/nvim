@@ -75,11 +75,21 @@ vim.pack.add({
     { src = "https://github.com/saghen/blink.cmp.git", name = "blink.cmp" },
     { src = "https://github.com/NeogitOrg/neogit.git", name = "neogit" },
     { src = "https://github.com/rafcamlet/nvim-luapad.git", name ="luapad" },
+    { src = "https://github.com/stevearc/aerial.nvim.git", name = "aerial" },
+    { src = "https://github.com/nvim-treesitter/nvim-treesitter.git", name = "treesitter" },
+    { src = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects.git", name = "tsobjects" },
 })
 
 require 'lualine'.setup({options={theme='dracula'}})
 
+require 'aerial'.setup({
+    layout = {
+	max_width = { 40, 0.4 },
+	width = 0.2,
+    },
+})
 -- }}}
+
 
 -- #TELESCOPE {{{
 local ts = require 'telescope.builtin'
