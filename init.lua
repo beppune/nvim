@@ -64,6 +64,10 @@ vim.keymap.set( 'n', '<Leader>n', ':tabnext<CR>', { silent = true })
 vim.keymap.set( 'n', '<Leader>g', ':', { silent = false })
 vim.keymap.set( 'n', '<Leader>s', '/', { silent = true })
 vim.keymap.set( 'c', 'jj', '<Esc>', { silent = true })
+
+-- Plugins
+vim.keymap.set( 'n', '<Leader>b', '<Cmd>Outline!<CR>', { silent = true })
+
 -- }}}
 
 -- #PLUGINS {{{
@@ -78,6 +82,7 @@ vim.pack.add({
     { src = "https://github.com/stevearc/aerial.nvim.git", name = "aerial" },
     { src = "https://github.com/nvim-treesitter/nvim-treesitter.git", name = "treesitter" },
     { src = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects.git", name = "tsobjects" },
+    { src = "https://github.com/hedyhli/outline.nvim.git", name = "outline" },
 })
 
 require 'lualine'.setup({options={theme='dracula'}})
@@ -88,6 +93,9 @@ require 'aerial'.setup({
 	width = 0.2,
     },
 })
+
+require('outline').setup({})
+
 -- }}}
 
 
